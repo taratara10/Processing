@@ -1,8 +1,10 @@
-import processing.core.*
+import processing.core.PApplet
 
-class Main : PApplet(){
+fun main() = PApplet.main(Main::class.java.simpleName)
+
+class Main : PApplet() {
     override fun settings() {
-
+        size(800, 600)
     }
 
     override fun setup() {
@@ -13,5 +15,3 @@ class Main : PApplet(){
 
     }
 }
-
-fun main() = PApplet.main(Main::class.java.simpleName)
